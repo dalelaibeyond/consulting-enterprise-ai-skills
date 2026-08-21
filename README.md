@@ -58,6 +58,13 @@ No dependencies beyond Claude itself. The deck pipeline (`deck-pipeline` + `mcki
 
 ## Skills
 
+### Intake
+Audit what you know before you structure it — stops downstream skills from fabricating numbers or amplifying bad ones.
+
+| Skill | What It Does | Best For |
+|-------|-------------|----------|
+| [Context Intake](context-intake/SKILL.md) | Labels every claim verified / assumed / unknown, flags contradictions, interviews for the highest-impact missing fields | Before any skill when input quality is uncertain or stakes are high |
+
 ### Thinking
 The McKinsey muscle — frame the problem, commit to an answer, pull the "so what" out of messy inputs.
 
@@ -107,6 +114,8 @@ Native, editable PowerPoint — no Gamma, no images.
 ## How the skills compose
 
 Most real work uses 2–3 of these together. Some common stacks:
+
+- **Before anything high-stakes:** Context Intake → (any stack below) — verifies inputs first so downstream skills don't fabricate or amplify bad numbers
 
 - **Customer research → memo:** Synthesis → Top-Down Memo (or Decision Memo) → McKinsey Critic
 - **Strategic question → recommendation:** Issue Tree → Hypothesis Tree → run the tests → Decision Memo
